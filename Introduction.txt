@@ -1,0 +1,54 @@
+Q1. What is React ?
+Ans. React is a javascript Open Source library for building user
+interface
+!#It is a javascript library
+!# It is not a framwork it is a library. 
+!# Focus on UI
+!#It dose not focus on routing or https request
+!#It is responsible only building user interfaces
+!#Rich Ecosystem
+
+Q2. Why learn React ?
+Ans.  React is a project created and maintained by facebook
+More than 100k starts on Github
+Huge Community
+in demand skillset
+
+React is a component based architecture
+!TRADITION WEBSITE HAVE MAINLY
+*HEADER
+*SIDENAV
+*MAIN CONTENT
+*FOOTER
+
+>>Each section Represents a component which when composed
+in the right way make up the entire website .
+
+>>components also make it possible to write reusable 
+code for example.
+/ You could have the component for  an Article on React
+/ The same component can be reused for Article on angular
+or vue by simple passing the right data into the article component
+for enterprices applications the ability to reuse code is a Huge
+ plus point.
+/React is a declarative 
+React with its ReactDOM library will build the actual
+UI This is declarative Paradigm
+//Tell React what you want and React Will build the actual UI
+//React will handle efficiently updating and rendering of the components
+//DOM updates are handles gracefully in react
+//HTML , CSS , javascript fundamentals are necessary for
+this ,Making Use of ES6 modern javascriptis also essential
+//ES6
+//essential you should learn keyworg filter, map and reduce methods
+//map funtion
+// let and const declaration arrow functions ,
+//template literals 
+//default parameters ,object literals, operator  , structuring assignments
+
+**********Chanel content -React***************
+>>>fundamentals
+>>>http
+>>>routing
+>>>Redux
+>>>Utilities
