@@ -1,0 +1,67 @@
+npx create-react-app my-app or npx create-react-app-g
+cd my-app
+npm start
+
+File and Folder Structure
+
+File
+
+1.U see in Root folder you have three folder ,node_module,public,src and Four Files
+.gitignore,package-lock.json,package.json,ReadMe.md File
+
+2.Let start with package.json File . This file contains the dependencies and scripts required for the project.
+You see in this react version .You can see also scripts , start , build , test , eject
+
+Scripts is use to run the applications or build the applications or even test
+
+Based you have npm or yarn as a package maneger
+
+2.see package-lock.json 
+This file ensure consistant installation of your dependencies . 
+
+3.ignore the file .gitignore or readme file 
+
+Folder
+
+Node-Module
+
+1.First one is Node-Module .This is a folder were all dependencies are installed
+a>>It is genrated when you run the create react app command or when you rum npm install
+
+2.Second folder is public folder this folder contains three Files
+a>>manifest.json which concern with progressive web apps which is out of scope for our discussion
+b>>we have favicon icons see in the browser tab and nothing react specific
+c>>Soo as bigner only concentrate index.html file 
+
+1.we are building single page applications
+2.veiw might dynamically change in the browser but it is HTML file that that gets served up
+<<You Not going to add any code in this file maybe some changes in the head tag but not in body tag>>
+
+>>You want react to control UI and for that purpose we have one div tag  withID is equal to root
+at run time take the react application takes over this div tag .and responsible for UI
+
+src
+
+This is the folder most using in the development
+1.Starting point for a react application is index.js
+
+In index.js we have , root Component , app Component and the DOM element 
+which will be controlled by react
+"The DOM element in our Example is an element with an Id of root and
+this is recollect this is the element inour index .html file we call this element 
+as the root DOM node because everything inside it will be controlled by react  
+for the hello world application the app component is rendered inside the root DOM node
+That brings us to the app component which is present in app.js
+
+it is reponsible for the HTML displayed in the browser
+
+Other words the app component represent the veiw which we see in the browser
+with app.js create react app also generate the CSS file for a styling test.js file for unit tests
+the Css file contain classes which are applied in the app component and the test contain simple test case
+
+we also have index.js CSS file which apply style to the style to the body tag and logo svg
+which reference in the app component
+
+finally we have serviceworker.js which is again concerned wiht progressive web app and can be ignore as a begninner
+
+Index.html contains the Dom node next the control enters index.js in ths react dom contais component on the root dom node
