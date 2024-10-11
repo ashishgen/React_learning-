@@ -1,0 +1,42 @@
+//componenet code is placed in javascript file and app component placed in app.js
+//Components are basically as a part of user userinterface
+//component describe a part of the user inter face
+//they are re usable and nested inside the other components
+//these are of two type
+//1.Stateless Functional component!!javaScript functions
+function welcome(props) {
+    return <h1>Hello, {props.name} </h1>;
+}
+
+//Functional componenet is simple functions
+//Use Func componenet as much as possible
+//Absence of 'this' Keyword
+//solution without using State
+//Mainly responsible for the UI
+//Stateless / Dumb / presentational 
+
+
+//Functional component  ---accept an input of properties and returns HTML 
+//THAT describe the UI
+
+//2.Stateful class component
+//class extending component class , // must have Render method returning HTML
+class welcome extends React.component {
+    render() {
+        return <h1>Hello , {this.props.name}</h1>;
+    }
+}
+//More feature rich
+// Maintain their own private data : State
+// complex UI logic
+// Provide lifecycle hooks
+// Stateful / Smart / Container
+
+both of cases return html but it is something as JSX
+
+JSX
+>>javaScript XML (JSX) -Extension to the javaScript lanquage syntax
+>>Write XML - like code for elements and components.
+>>JSX tags have a tag name , attribute and children.
+>>JSX is not a necessity to write React applications
+>>JSX makes your react code simpler and elegant
