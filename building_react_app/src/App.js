@@ -12,11 +12,13 @@ import Boss from './components/destructured';
 import ClassClick from './components/ClassClick';
 import FunctionClick from './components/FunctionClick';
 import EventBind from './components/EventBind';
+import Parentcomponent from './components/parentcomponent';
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <EventBind />
+        <Parentcomponent />
+        {/* <EventBind /> */}
         {/* <ClassClick />
         <FunctionClick /> */}
 
