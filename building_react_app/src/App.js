@@ -1,5 +1,6 @@
 
 import './App.css';
+import UserGreeting from './components/UserGreeting';
 import Greet  from './components/compo2';
 import React, { Component} from 'react';
 import  Welcome  from "./components/class_compo1"
@@ -12,12 +13,25 @@ import Boss from './components/destructured';
 import ClassClick from './components/ClassClick';
 import FunctionClick from './components/FunctionClick';
 import EventBind from './components/EventBind';
+import Childcomponent from './components/childcomponent';
 import Parentcomponent from './components/parentcomponent';
+import NameList from './components/NameList';
+// import Unique_key from' ./components/Unique_key'
+
+
+
+
+
 class App extends Component {
   render() {
     return (
+
       <div className='App'>
-        <Parentcomponent />
+        {/* <Unique_key /> */}
+        <NameList />
+        {/* <UserGreeting /> */}
+        {/* <Childcomponent /> */}
+        {/* <Parentcomponent /> */}
         {/* <EventBind /> */}
         {/* <ClassClick />
         <FunctionClick /> */}
