@@ -16,7 +16,7 @@ import EventBind from './components/EventBind';
 import Childcomponent from './components/childcomponent';
 import Parentcomponent from './components/parentcomponent';
 import NameList from './components/NameList';
-// import Unique_key from' ./components/Unique_key'
+import HomeList from './components/HomeList';
 
 
 
@@ -27,8 +27,9 @@ class App extends Component {
     return (
 
       <div className='App'>
-        {/* <Unique_key /> */}
-        <NameList />
+         <HomeList />
+       <NameList />
+      
         {/* <UserGreeting /> */}
         {/* <Childcomponent /> */}
         {/* <Parentcomponent /> */}
