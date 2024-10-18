@@ -17,7 +17,11 @@ import Childcomponent from './components/childcomponent';
 import Parentcomponent from './components/parentcomponent';
 import NameList from './components/NameList';
 import HomeList from './components/HomeList';
-
+import Stylesheets from './components/Stylesheets';
+import Inline from './components/Inline';
+import './appStyles.css'
+import styles from './appStyles.module.css'
+import Form from './components/Form';
 
 
 
@@ -27,9 +31,16 @@ class App extends Component {
     return (
 
       <div className='App'>
-         <HomeList />
-       <NameList />
-      
+        <Form />
+      {/* <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+
+        <Inline />
+        <Stylesheets primary={true} /> */}
+
+         {/* <HomeList />
+            // <NameList />
+       */}
         {/* <UserGreeting /> */}
         {/* <Childcomponent /> */}
         {/* <Parentcomponent /> */}

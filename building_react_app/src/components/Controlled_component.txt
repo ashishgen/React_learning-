@@ -1,0 +1,27 @@
+   Controlled components
+
+                              this.state={
+                                 email:''
+                                }
+                  this.changeEmailHandler = {event} => {
+                     this.setState({email: event.target.value})
+                        }
+
+<input type='text' value={this.state.email}   onchange={this.changeEmailHandler}     />
+
+
+
+
+We are working with a Controlled components and react state is the 
+single source of truth for this input element
+
+you can see that we have username as a state property which is supplied as a value 
+attribute of  the input element whenever there is change that new value is propogated
+to handle  username change which sets back the state property username to the updated
+value and when the state is said the render method is called again the new value is available
+to the value property and that is how we have controlled components
+
+Next create controlled components for a text area as well as a select tag this
+will also help you get used to the controlled components way of working with form elements
+There are three simple steps
+1. Add the element HTML assign the components state to the element value and assign an unchange handler that updates the state.

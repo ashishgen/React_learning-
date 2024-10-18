@@ -1,0 +1,10 @@
+//Styling React Component 
+1. CSS stylesheets
+2.Inline Styling
+3.CSS Modules
+4.CSS in JS Library
+
+
+
+// if you want to use multiple css 
+use literrals
