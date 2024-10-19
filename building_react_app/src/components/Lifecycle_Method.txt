@@ -10,6 +10,35 @@ of any child component .
 In the Mounting State we have four Methods
 1st. constructor,static getDerivedStateFromProps, render and componentDidMount
 
+Mounting Lifecycle Methods-
+1st method. constructor(props)-A special function that will get called whenever a new component is created
+--It is used for Initializing state 
+ Binding the event handlers to the class instances
+--Do not cause side effects Ex.HTTP requests
+--Your own Constructor 
+super(props)
+Directly overwrite this.state
+
+2nd method.static method
+      constructor(props)-When the state of the component depends on changes in props over time./Set the state
+      static getDerivedStateFromProps(props, state)
+
+3rd Method.is render method......
+     constructor( props )------Only required method
+     static getDerivedStateFromProps(props, state)-------Read props & state and return JSX
+     render()--------------------------------------------But do not change state or intract with DOM or make ajax calls.
+              -------------------------------------------THe children components lifecycle methods are also executed
+
+4rth Method. constructor( props )---Invoke immediately after a component and all its children components have been rendered to the DOM.
+            static getDerivedStateFromProps(props, state)---Cause side effect Ex: Interact with the DOM or perform any ajax calls to load data.
+            render()
+            componentDidMount()
+
+
+
+
+
+
 In the Updating State we have five methods are
 1st. static getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate and componentDidUpdate
 

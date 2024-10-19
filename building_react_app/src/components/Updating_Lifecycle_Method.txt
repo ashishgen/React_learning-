@@ -1,0 +1,24 @@
+Updating Lifecycle Methods
+
+1st Method
+static getDerivedStateFromProps( props,state)---Method is called every time a component is re-rendered
+                                             ---Set the state
+                                             ---Do not cause side effect Ex:HTTP requests
+2nd Method  
+shouldComponentUpdate(nextProps, nextState)   ---Dictate if the component should re render or not
+                                             ----THis method is specially Performance optimization   
+                                             ----Do not cause side effect HTTP                                 
+3rd Method
+render()        --only required method
+               ---Read props & state and return JSX      
+               ---Do not change state or interact with DOM or make ajax calls
+4rth Method 
+getSnapshotBeforeUpdate(prevProps, prevState)  ---Called right before the changes from the virtual DOM are to be reflected in the DOM
+                                              ---we use this method Capture some information from the DOM
+                                              ---Method will either return null or return a value.
+                                              Retured value will be passed as the third parameter to 
+                                              the next method                            
+Final Method 
+componentDidUpdate(prevProps, prevState, snapshot)---Called after the render is finished in the re-render cycless
+                                                  ---Cause side effect
+                                                  ---

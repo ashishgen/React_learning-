@@ -1,0 +1,7 @@
+Unmounting phase Method
+componentWillUnmount() ----Method is invoke immediately before a 
+                        component is unmounted and destroyed
+                       ----Cancelling any network requests, removing event
+                       handlers, cancelling any subscription and also
+                       invalidating timers.
+                       ---Do not call the  setState method
