@@ -1,0 +1,11 @@
+Error Handling
+Error boundaries are React components that catch javaScript error in their child components tree,
+log those errors, and display a fall-back UI.
+
+A class component becomes an Error Boundary by defining either or both of getDerivedStateFromError
+ and componentDidCatch lifecycle methods.
+
+The placememt of the Error Boundary also matters as it controls if the entire app should have the
+fall-back UI or just the component causing the problem.
+
+Provide a way to gracefully handle error in application code

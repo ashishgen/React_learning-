@@ -1,0 +1,29 @@
+Higher order Components-HOC
+A pattern where a function takes a component as an argument and return a new component.
+
+//code
+const NewComponent = higherOrderComponent{ originalComponent }
+const EnhancedComponent = higherOrderComponent{ originalComponent}
+
+const IronMan = withSuit{ TonyStark }
+
+Beigin with App.js Here we have include the clickcounter component the clip counter is defined in clickcounter.js file
+now over here you can notice that we are exporting the updated component hoc (higher order component) passing in the click counter
+ updated component is defined in with counter
+
+ Lets take a look at that file the updated component is a function which accept a component or an orignal component as its parameter and
+ return a new component in our case the orignal component refers to click counter
+ The new component has functionality to  maintain the state of account property and also the method to increament that current property both of them
+ are passed as props to the originalComponent
+ The originalComponent Enhanced with these props are then returned the control goes back to click counter where the count  and increament
+ count props passed in the from the HSE are be structured and used in the return statement
+ So the hoc is bassically taking care of maintaining the state and state and increamenting it when you click 
+ on the button the count is increamented and displayed in the UI
+ The same Execution flow also happens for the hover counter component but what you should know is that both the components received 
+ separate state increamenting the count in click counter will not affect the hover counter and vice-versa
+ so that is how HSE works
+
+ it is a function that accept a component and returns an Enhanced component now
+
+ Lets talk about naming conventions the component and functions you typically see are different from what I have used so
+ l

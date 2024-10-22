@@ -27,18 +27,28 @@ import LifecycleA from './components/LifecycleA';
 import Updating_Lifecycle_MethodA from './components/Updating_Lifecycle_MethodA'
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
-// import PureComp from './components/PureComp';
+import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
-// import FRParentInput from './components/FRParentInput';
 
+// import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
 class App extends Component {
   render() {
     return (
 
       <div className='App'>
-        <FRParentInput />
+        <ClickCounterTwo />
+        <HoverCounterTwo />
+        {/* <ClickCounter />
+        <HoverCounter /> */}
+        {/* <PortalDemo /> */}
+        {/* <FRParentInput /> */}
         {/* <FocusInput /> */}
         {/* < RefsDemo /> */}
         {/* <ParentComp /> */}
