@@ -1,0 +1,25 @@
+Context provides a way to pass data through the component tree without having to pass
+props down manually at every level.
+
+1. Create the context
+2.Provide a Context value
+3.Consume the context value in the necessary component
+
+
+how made nested function 
+
+First of all
+make a curly braces include an arrow function the functions gets usercontext value from
+which is Ashish  .in parameter which ca be use body to return 
+
+We can pass a default value 
+so the default value only be used does not have a provider above a componetary 
+
+Now Context Type Properties
+
+There are two limitations
+1. Only work with the class components
+2.Only subscibe to a single context using context type 
+many a times in appication you need more than one context 
+in which scenario the consumer component is the way to go 
+

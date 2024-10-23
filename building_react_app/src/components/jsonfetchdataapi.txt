@@ -1,0 +1,48 @@
+I want to focus on fetching data in our react application and not on creating api 
+
+For this vedio I will be making a get request to slash posts which will fetch array of posts to display in 
+in the UI lets get start 
+i m going back to vscode
+
+create a new component so within the source folder i m going to add new folder called components nd within
+with in the folder anew files postlist.js within the file 
+i m going to use the react snippet RCE to create a class component as of re cording react version 16.8 is out which does
+give us access to hooks however I want to first show how to work  with HTTP and class component and talk about codes separately so
+
+Our postlist component I,m going to remove the named export and for the JSX simply add the text list of posts
+back in app componemnt I will include postlist component if you now save all the files and takes a 
+look at the browser 
+you should be able to see the text list of posts now for the data fetching
+first step we import Axios library and post this component Axios from Axios seconds
+seconds step we need to create a state property which will store the list of post I'm 
+going to use the reactor snippet iconst to add a constructor and a constructor and then a 
+
+state  property called posts initialized to an empty array third step we are
+going to Axios to make a get request to the json place holder API the question though
+is where do we place the  code to make the get request the answer is in the 
+component did mount lifecycle method this method will be executed when the component 
+mounts for the first time and this only executed once during component lifetimes a perfect 
+place for our get request now to make a get request we invoke the get method on the Axios 
+library this method accept the API endpoint as its argument 
+go back to browser and click post route copy URL from the address 
+bar and paste it as a string parameter to the get get method
+
+Alright we are making get request but how do we access the data that is returned 
+well Axios is promise based library so we can add them and catch blocks thn accept an arrow
+function as its argument which us access to the response and  i m goingto simply log to the console 
+response also if at all something went wrong we simply lock that error in the console so again an arrow
+function which receives the error and log error
+if you now go back to the browser and open dev tools youshould 
+see an object logged in the console if i expand the 
+data property you can see the list of 100 post that
+have been retriveed all that is left now is to assign 
+this data array to the state probability and then render 
+it in the JSX
+so back to the VSCode when we get back the response we are going to set the response datato the post 
+array so this.setstate post is going to be response dot data in the render method  first the structure 
+the state property then display this list of post using the map method i m going 
+to have curly braces if at all there is at least one post supposed dot lenght then we are 
+going to use the map method and displayed each post title
+he is going to be post tiltle dotid and we are going 
+to render just post dot title if post is an empty aray we
+we are  not going to render anything  and save the file go back to the browswer

@@ -38,13 +38,27 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
+
+
+
+
 class App extends Component {
   render() {
     return (
 
       <div className='App'>
-        <ClickCounterTwo />
-        <HoverCounterTwo />
+        <PostForm />
+        {/* <PostList /> */}
+       {/* Step 2 of Contaxt */}
+        {/* <UserProvider value="Ashish">
+        <ComponentC />
+        </UserProvider> */}
+        {/* <ClickCounterTwo />
+        <HoverCounterTwo /> */}
         {/* <ClickCounter />
         <HoverCounter /> */}
         {/* <PortalDemo /> */}
