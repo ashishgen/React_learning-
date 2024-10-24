@@ -1,0 +1,41 @@
+What are Hooks?
+Hooks are a new features addition in React version 16.8 which allow you to useState
+React features without having to write a class.
+Ex.State of a component
+
+Hooks dont work inside classes
+
+Why neccesity of Hooks in React?
+Reason1.
+Understand how this keywords works in JavaScript.
+Remember to bind event handler in class components.
+Classses dont minify very well and make hot reloading very unreliable.
+
+Reason2.
+There is no particular way to reuse statefull component logic.
+HOC and render props patterns do address this problem.
+Makes the code harder to follow.
+There is need a to share statefull logic in a better way.
+
+Reason3
+Create component for complex scenarios such as data fetching and subscribing to events
+Related code is not organised in one place
+Ex: Data fetching - In componentDidMount and componentDidUpdate
+Ex: Event listners - In componentDidMount and componentWillUnmount
+Because of statefull logic - Cannot break components into smaller ones
+
+Noteworthy Points
+React version 16.8 or higher
+completely opt in
+Hooks dont contain any breaking changes and the release is 100% backwards-compatible.
+Classes wont be removed from React.
+Cant use Hooks inside of a class component.
+Hooks dont replace your existing knowledge of React concept
+Instead ,Hooks provide a more direct API to the React concept you already know.
+
+SUMMARY---------
+Hooks are a new featues addition in React version 16.8
+They allow you to use react featues without having to write a class
+Avoid the whole confusion with 'this' keywords
+Allow you to react statefull logic
+Organise the logic inside a component into reuseable isolated units. 
