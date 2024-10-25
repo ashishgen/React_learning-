@@ -10,3 +10,12 @@ function Example(){
 
 no breaking changes
 completely opt-in & 100% backwards-compatible.
+
+Rules Of Hooks
+only call Hooks at the Top level
+Dont call Hooks inside loops, conditions , or nested function
+
+only call Hooks from React Functions
+call them from within React functinal component and not just any regular javascript functions
+
+

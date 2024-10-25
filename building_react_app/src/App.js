@@ -42,6 +42,8 @@ import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
+import ClassCounter from './components/ClassCounter';
+import HookCounter from './components/HookCounter';
 
 
 
@@ -51,7 +53,9 @@ class App extends Component {
     return (
 
       <div className='App'>
-        <PostForm />
+        <HookCounter />
+        {/* <ClassCounter /> */}
+        {/* <PostForm /> */}
         {/* <PostList /> */}
        {/* Step 2 of Contaxt */}
         {/* <UserProvider value="Ashish">
