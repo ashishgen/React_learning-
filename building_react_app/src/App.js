@@ -37,13 +37,13 @@ import PortalDemo from './components/PortalDemo';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
-import ClassCounter from './components/ClassCounter';
-import HookCounter from './components/HookCounter';
+// import ClassCounter from './components/ClassCounter';
+// import HookCounter from './components/HookCounter';
+import HookCounterTwo from './components/HoverCounterTwo';
 
 
 
@@ -53,7 +53,8 @@ class App extends Component {
     return (
 
       <div className='App'>
-        <HookCounter />
+        <HookCounterTwo />
+        {/* <HookCounter /> */}
         {/* <ClassCounter /> */}
         {/* <PostForm /> */}
         {/* <PostList /> */}
